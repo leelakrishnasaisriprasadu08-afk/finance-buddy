@@ -1,0 +1,5 @@
+com/financebuddy/config/SecurityConfig.class
+com/financebuddy/api/FinanceController.class
+com/financebuddy/api/FinanceController$AssistantRequest.class
+com/financebuddy/FinanceBuddyApplication.class
+com/financebuddy/api/FinanceController$ExpenseRequest.class

@@ -1,0 +1,31 @@
+server:
+  port: ${PORT:8080}
+  forward-headers-strategy: framework
+
+spring:
+  application:
+    name: finance-buddy-api
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${AUTH_ISSUER_URI:http://localhost:8080/mock-issuer}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      probes:
+        enabled: true
+
+app:
+  cors-origins: ${CORS_ORIGINS:http://localhost:4173}
+
+integrations:
+  finvu:
+    enabled: ${FINVU_ENABLED:false}
+  grok:
+    enabled: ${GROK_ENABLED:false}
