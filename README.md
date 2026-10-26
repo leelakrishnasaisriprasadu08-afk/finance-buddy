@@ -1,14 +1,15 @@
 # Finance Buddy
 
-Finance Buddy is a dependency-free personal and business financial support prototype. It gives a user a quick view of monthly income, spending, available cash, savings rate, recent activity, and a next-best-move recommendation.
+Finance Buddy is a personal and business financial support prototype. It gives a user a quick view of monthly income, spending, available cash, savings rate, recent activity, and a next-best-move recommendation.
 
 ## Run locally
 
 ```bash
-python3 -m http.server 4173
+npm install
+npm run dev
 ```
 
-Open <http://localhost:4173> in a browser.
+Open the local URL printed by Vite, usually <http://localhost:5173>.
 
 ## Current behavior
 

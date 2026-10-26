@@ -9,18 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="helper.css" />
-  <link rel="stylesheet" href="finance.css" />
-  <link rel="stylesheet" href="guide.css" />
-  <link rel="stylesheet" href="launch.css" />
-  <link rel="stylesheet" href="experience.css" />
-  <link rel="stylesheet" href="polish.css" />
-  <link rel="stylesheet" href="studio.css" />
-  <link rel="stylesheet" href="pages.css" />
-  <link rel="stylesheet" href="humanize.css" />
-  <link rel="stylesheet" href="bottom.css" />
-  <link rel="stylesheet" href="account.css" />
-  <link rel="stylesheet" href="opportunities.css" />
 </head>
 <body>
   <section class="launch-screen" id="launch-screen">
@@ -67,9 +55,9 @@
       </section>
 
       <section class="metrics-grid dashboard-section" data-page-section="overview" aria-label="Financial summary">
-        <article class="metric-card metric-primary"><div class="metric-label">Available this month <span class="info-dot">i</span></div><div class="metric-value" id="available-value">$2,840</div><div class="metric-foot positive"><span>↗</span> 12.4% from last month</div><div class="sparkline primary-spark"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
-        <article class="metric-card"><div class="metric-label">Monthly income</div><div class="metric-value" id="income-value">$5,420</div><div class="metric-foot">On track for <strong>+8.2%</strong> growth</div><div class="bar-meter"><span style="width: 68%"></span></div></article>
-        <article class="metric-card"><div class="metric-label">Spent so far</div><div class="metric-value" id="spent-value">$2,580</div><div class="metric-foot"><strong id="spent-percent">47.6%</strong> of income used</div><div class="bar-meter muted"><span id="spent-meter" style="width: 48%"></span></div></article>
+        <article class="metric-card metric-primary"><div class="metric-label">Available this month <span class="info-dot">i</span></div><div class="metric-value" id="available-value">₹44,000</div><div class="metric-foot positive"><span>↗</span> 12.4% from last month</div><div class="sparkline primary-spark"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+        <article class="metric-card"><div class="metric-label">Monthly income</div><div class="metric-value" id="income-value">₹84,000</div><div class="metric-foot">On track for <strong>+8.2%</strong> growth</div><div class="bar-meter"><span style="width: 68%"></span></div></article>
+        <article class="metric-card"><div class="metric-label">Spent so far</div><div class="metric-value" id="spent-value">₹40,000</div><div class="metric-foot"><strong id="spent-percent">47.6%</strong> of income used</div><div class="bar-meter muted"><span id="spent-meter" style="width: 48%"></span></div></article>
         <article class="metric-card"><div class="metric-label">Savings rate</div><div class="metric-value" id="savings-value">52.4%</div><div class="metric-foot positive"><span>↗</span> Healthy momentum</div><div class="mini-ring"><span>52%</span></div></article>
       </section>
 
@@ -87,7 +75,7 @@
         <div class="recurring-heading"><div><p class="eyebrow">Monthly commitments</p><h2>Set aside money for the usual things.</h2><p>Commit the costs you expect every month so your available balance tells the whole story.</p></div><div class="commitment-total"><span>Committed each month</span><strong id="commitment-total">₹0</strong></div></div>
         <div class="recurring-grid">
           <article class="panel common-transactions"><div class="panel-header"><div><h3>Common expenses</h3><p>Tap a category to add a monthly commitment.</p></div><span class="commitment-count" id="commitment-count">0 added</span></div><div class="common-expense-options"><button type="button" class="common-expense-option" data-commitment-name="Rent" data-commitment-category="Housing" data-commitment-amount="13500"><span class="common-expense-icon housing">⌂</span><span><strong>Rent</strong><small>Housing</small></span><b>＋</b></button><button type="button" class="common-expense-option" data-commitment-name="Groceries" data-commitment-category="Essentials" data-commitment-amount="5000"><span class="common-expense-icon food">⌁</span><span><strong>Groceries</strong><small>Essentials</small></span><b>＋</b></button><button type="button" class="common-expense-option" data-commitment-name="Utilities" data-commitment-category="Bills" data-commitment-amount="2200"><span class="common-expense-icon bills">⌁</span><span><strong>Utilities</strong><small>Bills</small></span><b>＋</b></button><button type="button" class="common-expense-option" data-commitment-name="Transport" data-commitment-category="Travel" data-commitment-amount="3000"><span class="common-expense-icon travel">↗</span><span><strong>Transport</strong><small>Travel</small></span><b>＋</b></button><button type="button" class="common-expense-option" data-commitment-name="Subscriptions" data-commitment-category="Lifestyle" data-commitment-amount="1200"><span class="common-expense-icon subscription">◌</span><span><strong>Subscriptions</strong><small>Lifestyle</small></span><b>＋</b></button><button type="button" class="common-expense-option" data-commitment-name="Insurance" data-commitment-category="Protection" data-commitment-amount="2500"><span class="common-expense-icon insurance">✓</span><span><strong>Insurance</strong><small>Protection</small></span><b>＋</b></button></div><form class="commitment-form" id="commitment-form"><label>Custom monthly commitment<input name="name" type="text" placeholder="e.g. Childcare or loan payment" required /></label><label>Amount in INR<input name="amount" type="number" min="1" step="50" placeholder="e.g. 8000" required /></label><button class="primary-button" type="submit">Commit this amount <span>↗</span></button></form></article>
-          <article class="panel commitment-list-panel"><div class="panel-header"><div><h3>Your monthly commitments</h3><p>Money to protect before flexible spending.</p></div><span class="commitment-status">Planning view</span></div><div class="commitment-list" id="commitment-list"><div class="commitment-empty" id="commitment-empty"><span>◎</span><p>No monthly commitments yet. Add the costs you already know are coming.</p></div></div><div class="commitment-foot"><span>Remaining after commitments</span><strong id="commitment-remaining">₹5,420</strong></div></article>
+          <article class="panel commitment-list-panel"><div class="panel-header"><div><h3>Your monthly commitments</h3><p>Money to protect before flexible spending.</p></div><span class="commitment-status">Planning view</span></div><div class="commitment-list" id="commitment-list"><div class="commitment-empty" id="commitment-empty"><span>◎</span><p>No monthly commitments yet. Add the costs you already know are coming.</p></div></div><div class="commitment-foot"><span>Remaining after commitments</span><strong id="commitment-remaining">₹84,000</strong></div></article>
         </div>
       </section>
 
@@ -96,16 +84,16 @@
           <article class="panel cashflow-panel">
             <div class="panel-header"><div><h2>Cash flow</h2><p>Income against spending over the last 6 months.</p></div><div class="select-wrap"><select id="period-select" aria-label="Select cash flow period"><option>Last 6 months</option><option>This year</option></select></div></div>
             <div class="legend"><span><i class="legend-income"></i> Income</span><span><i class="legend-spend"></i> Spending</span></div>
-            <div class="chart-area"><div class="y-axis"><span>$6k</span><span>$4k</span><span>$2k</span><span>$0</span></div><div class="chart"><div class="grid-lines"><i></i><i></i><i></i><i></i></div><div class="bar-group"><b class="income" style="height: 65%"></b><b class="spend" style="height: 35%"></b><small>Apr</small></div><div class="bar-group"><b class="income" style="height: 72%"></b><b class="spend" style="height: 40%"></b><small>May</small></div><div class="bar-group"><b class="income" style="height: 69%"></b><b class="spend" style="height: 37%"></b><small>Jun</small></div><div class="bar-group"><b class="income" style="height: 79%"></b><b class="spend" style="height: 44%"></b><small>Jul</small></div><div class="bar-group"><b class="income" style="height: 75%"></b><b class="spend" style="height: 43%"></b><small>Aug</small></div><div class="bar-group current"><b class="income" style="height: 88%"></b><b class="spend" style="height: 47%"></b><small>Sep</small></div></div></div>
+            <div class="chart-area"><div class="y-axis"><span>₹100k</span><span>₹75k</span><span>₹50k</span><span>₹0</span></div><div class="chart"><div class="grid-lines"><i></i><i></i><i></i><i></i></div><div class="bar-group"><b class="income" style="height: 65%"></b><b class="spend" style="height: 35%"></b><small>Apr</small></div><div class="bar-group"><b class="income" style="height: 72%"></b><b class="spend" style="height: 40%"></b><small>May</small></div><div class="bar-group"><b class="income" style="height: 69%"></b><b class="spend" style="height: 37%"></b><small>Jun</small></div><div class="bar-group"><b class="income" style="height: 79%"></b><b class="spend" style="height: 44%"></b><small>Jul</small></div><div class="bar-group"><b class="income" style="height: 75%"></b><b class="spend" style="height: 43%"></b><small>Aug</small></div><div class="bar-group current"><b class="income" style="height: 88%"></b><b class="spend" style="height: 47%"></b><small>Sep</small></div></div></div>
           </article>
 
           <article class="panel activity-panel">
             <div class="panel-header"><div><h2>Recent activity</h2><p>Your latest financial updates.</p></div><button class="text-button" data-view="activity">View all <span>→</span></button></div>
-            <div class="activity-list" id="activity-list"><div class="activity-row"><div class="activity-icon warm">↗</div><div class="activity-detail"><strong>Salary payment</strong><span>Sep 15 · Income</span></div><strong class="activity-amount income-text">+$5,420</strong></div><div class="activity-row"><div class="activity-icon cool">⌁</div><div class="activity-detail"><strong>Rent payment</strong><span>Sep 03 · Housing</span></div><strong class="activity-amount">−$1,350</strong></div><div class="activity-row"><div class="activity-icon green">✣</div><div class="activity-detail"><strong>Transfer to savings</strong><span>Sep 01 · Savings</span></div><strong class="activity-amount">−$800</strong></div><div class="activity-row"><div class="activity-icon violet">◌</div><div class="activity-detail"><strong>Groceries</strong><span>Aug 29 · Essentials</span></div><strong class="activity-amount">−$146</strong></div></div>
+            <div class="activity-list" id="activity-list"><div class="activity-row"><div class="activity-icon warm">↗</div><div class="activity-detail"><strong>Salary payment</strong><span>Sep 15 · Income</span></div><strong class="activity-amount income-text">+₹84,000</strong></div><div class="activity-row"><div class="activity-icon cool">⌁</div><div class="activity-detail"><strong>Rent payment</strong><span>Sep 03 · Housing</span></div><strong class="activity-amount">−₹13,500</strong></div><div class="activity-row"><div class="activity-icon green">✣</div><div class="activity-detail"><strong>Transfer to savings</strong><span>Sep 01 · Savings</span></div><strong class="activity-amount">−₹12,000</strong></div><div class="activity-row"><div class="activity-icon violet">◌</div><div class="activity-detail"><strong>Groceries</strong><span>Aug 29 · Essentials</span></div><strong class="activity-amount">−₹2,450</strong></div></div>
           </article>
         </div>
 
-        <aside class="agent-panel"><div class="agent-heading"><div class="agent-orb">✦</div><div><p class="eyebrow">Step 3 · Personal helper</p><h2>Your next best move</h2></div><span class="live-pill">READY</span></div><div class="agent-message" id="agent-message"><p>Based on your latest update, your month is looking strong. You have room to make progress without squeezing your day-to-day.</p><div class="recommendation"><span class="recommendation-icon">↗</span><div><strong>Keep your buffer intact</strong><p>Your available cash covers 2.1 months of essential spending. That is a solid base.</p></div></div><div class="recommendation"><span class="recommendation-icon">◎</span><div><strong>Put growth on autopilot</strong><p>Moving $540 on payday would keep your savings rate above 50%.</p></div></div></div><button class="agent-cta" id="ask-agent">Ask Finance Buddy <span>↗</span></button><div class="agent-footer">Based on your latest update <span>•</span> just now</div></aside>
+        <aside class="agent-panel"><div class="agent-heading"><div class="agent-orb">✦</div><div><p class="eyebrow">Step 3 · Personal helper</p><h2>Your next best move</h2></div><span class="live-pill">READY</span></div><div class="agent-message" id="agent-message"><p>Based on your latest update, your month is looking strong. You have room to make progress without squeezing your day-to-day.</p><div class="recommendation"><span class="recommendation-icon">↗</span><div><strong>Keep your buffer intact</strong><p>Your available cash covers 2.0 months of essential spending. That is a solid base.</p></div></div><div class="recommendation"><span class="recommendation-icon">◎</span><div><strong>Put growth on autopilot</strong><p>Moving ₹8,400 on payday would keep your savings rate above 50%.</p></div></div></div><button class="agent-cta" id="ask-agent">Ask Finance Buddy <span>↗</span></button><div class="agent-footer">Based on your latest update <span>•</span> just now</div></aside>
       </section>
 
       <section class="standalone-page dashboard-section" data-page-section="activity"><div class="standalone-heading"><div><p class="eyebrow">Activity</p><h2>Everything that moved your money.</h2><p>Review income, expenses, and updates in one timeline.</p></div><button class="primary-button" id="activity-add">＋ Add expense</button></div><div class="activity-summary"><div><span>This month</span><strong>₹2,580</strong><small>spent so far</small></div><div><span>Transactions</span><strong>24</strong><small>4 need review</small></div><div><span>Largest category</span><strong>Housing</strong><small>₹1,350 this month</small></div></div><div class="full-activity-list"><div class="activity-day"><span>Today · September 16</span><div class="activity-row"><div class="activity-icon warm">↗</div><div class="activity-detail"><strong>Salary payment</strong><span>Income · Account ending 4820</span></div><strong class="activity-amount income-text">+₹84,000</strong></div><div class="activity-row"><div class="activity-icon green">✣</div><div class="activity-detail"><strong>Cloud workspace</strong><span>Business · Today, 1:05 PM</span></div><strong class="activity-amount">−₹2,020</strong></div></div><div class="activity-day"><span>Yesterday · September 15</span><div class="activity-row"><div class="activity-icon cool">⌁</div><div class="activity-detail"><strong>Rent payment</strong><span>Housing · Auto-detected</span></div><strong class="activity-amount">−₹1,350</strong></div><div class="activity-row"><div class="activity-icon violet">◌</div><div class="activity-detail"><strong>Groceries</strong><span>Essentials · Review category</span></div><strong class="activity-amount">−₹146</strong></div></div></div></section>
@@ -113,16 +101,134 @@
       <section class="standalone-page dashboard-section" data-page-section="goals"><div class="standalone-heading"><div><p class="eyebrow">Goals</p><h2>Give your money somewhere to go.</h2><p>Turn good intentions into visible, funded progress.</p></div><button class="primary-button" id="add-goal">＋ Create goal</button></div><div class="goal-grid"><article class="goal-card goal-featured"><div class="goal-card-top"><span class="goal-symbol">◎</span><span class="goal-status">On track</span></div><strong>Emergency buffer</strong><p>Build three months of essential spending.</p><div class="goal-progress"><span style="width:68%"></span></div><div class="goal-meta"><span>₹1,35,000 saved</span><b>68%</b></div></article><article class="goal-card"><div class="goal-card-top"><span class="goal-symbol">↗</span><span class="goal-status queued-goal">Planned</span></div><strong>Business expansion</strong><p>Fund one carefully measured growth test.</p><div class="goal-progress"><span style="width:32%"></span></div><div class="goal-meta"><span>₹24,000 saved</span><b>32%</b></div></article><article class="goal-card"><div class="goal-card-top"><span class="goal-symbol">⌂</span><span class="goal-status queued-goal">Planned</span></div><strong>Home down payment</strong><p>Keep a long-term goal separate and visible.</p><div class="goal-progress"><span style="width:18%"></span></div><div class="goal-meta"><span>₹90,000 saved</span><b>18%</b></div></article></div><div class="goal-insight"><span class="agent-orb">✦</span><div><strong>Finance Buddy insight</strong><p>Protect your emergency buffer first. Your business expansion goal can stay on track with a smaller monthly contribution this month.</p></div></div></section>
 
       <section class="helper-workspace dashboard-section" id="ai-helper" data-page-section="assistant">
-        <div class="helper-header"><div><p class="eyebrow">Finance Buddy intelligence</p><h2>Your AI business helper</h2><p>Turn your latest financial signals into clear, staged decisions for the business.</p></div><span class="helper-badge"><span class="status-dot"></span> Context ready</span></div>
+        <div class="helper-header">
+          <div>
+            <p class="eyebrow">Finance Buddy intelligence</p>
+            <h2>AI Financial Advisor & Strategy Desk</h2>
+            <p>Real-time conversational financial guidance linked directly to your income, commitments, and safety buffers.</p>
+          </div>
+          <div class="helper-header-actions">
+            <div class="ollama-control-badge" id="ollama-control" title="Local Private AI via Ollama">
+              <span class="ollama-dot" id="ollama-status-dot"></span>
+              <span class="ollama-label">🦙 Ollama:</span>
+              <select id="ollama-model-select" aria-label="Select Ollama Model">
+                <option value="llama3.2" selected>llama3.2</option>
+                <option value="llama3">llama3</option>
+                <option value="mistral">mistral</option>
+                <option value="deepseek-r1">deepseek-r1</option>
+                <option value="qwen2.5">qwen2.5</option>
+                <option value="phi3">phi3</option>
+              </select>
+            </div>
+            <span class="helper-badge" id="ai-health-badge"><span class="status-dot"></span> <span id="ai-health-text">Buffer: 2.0 mo · Healthy</span></span>
+            <button type="button" class="icon-tool-button" id="clear-chat" title="Clear chat history" aria-label="Clear chat">🗑️</button>
+            <button type="button" class="icon-tool-button" id="export-chat" title="Export advice as text" aria-label="Export chat">📥</button>
+          </div>
+        </div>
+
         <div class="helper-grid">
           <div class="helper-chat">
-            <div class="chat-topline"><strong>Planning desk</strong><span>Uses your current snapshot</span></div>
-            <div class="chat-stream" id="chat-stream"><div class="chat-message assistant"><span class="chat-avatar">✦</span><div><strong>Finance Buddy</strong><p>I can help you improve cash flow, prioritize investments, and plan sustainable growth. What would you like to work on?</p></div></div></div>
-            <div class="prompt-chips"><button class="prompt-chip" data-prompt="How can I improve cash flow?">Improve cash flow</button><button class="prompt-chip" data-prompt="Create a 90 day growth plan">Create a 90-day plan</button><button class="prompt-chip" data-prompt="Can I afford to hire?">Can I afford to hire?</button></div>
-            <form class="helper-input" id="helper-form"><input id="helper-prompt" aria-label="Ask the AI business helper" placeholder="Ask about your next business decision..." autocomplete="off" /><button type="submit" aria-label="Send question">↗</button></form>
-            <small class="helper-disclaimer">Guidance is educational, based on the numbers you provide, and not financial advice.</small>
+            <div class="chat-topline">
+              <div class="chat-title-group">
+                <span class="ai-spark-icon">✦</span>
+                <strong>Live Financial Intelligence</strong>
+              </div>
+              <span id="chat-live-context">Linked to: Alex Morgan • Live Snapshot</span>
+            </div>
+
+            <div class="chat-stream" id="chat-stream">
+              <div class="chat-message assistant">
+                <span class="chat-avatar">✦</span>
+                <div class="chat-content">
+                  <div class="chat-header-meta">
+                    <strong>Finance Buddy</strong>
+                    <time>Just now</time>
+                  </div>
+                  <div class="chat-bubble">
+                    <p>Hello Alex! I am actively synced with your current cash snapshot (<strong>₹84,000</strong> income • <strong>₹44,000</strong> available).</p>
+                    <p>I can connect directly to your local <strong>Ollama models</strong> for 100% offline, private financial advice without needing any external API keys.</p>
+                    <div class="chat-action-cards">
+                      <button type="button" class="chat-action-btn" data-chat-action="simulations">◈ Run Simulation</button>
+                      <button type="button" class="chat-action-btn" data-chat-action="accounts">⌁ View Commitments</button>
+                      <button type="button" class="chat-action-btn" data-chat-action="update">＋ Update Numbers</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="chat-prompt-shelf">
+              <div class="shelf-label">Popular strategy prompts:</div>
+              <div class="prompt-chips">
+                <button type="button" class="prompt-chip" data-prompt="How can I improve my cash flow this month?">💵 Cash flow sprint</button>
+                <button type="button" class="prompt-chip" data-prompt="Create a 90-day growth plan for business">📈 90-day growth plan</button>
+                <button type="button" class="prompt-chip" data-prompt="Can I afford to hire a new team member?">👥 Hiring decision</button>
+                <button type="button" class="prompt-chip" data-prompt="How much emergency buffer should I keep?">🛡️ Emergency fund</button>
+                <button type="button" class="prompt-chip" data-prompt="Audit my monthly commitments and spending">🔍 Audit commitments</button>
+              </div>
+            </div>
+
+            <form class="helper-input" id="helper-form">
+              <input id="helper-prompt" aria-label="Ask the AI business helper" placeholder="Ask about cash flow, hiring, runway, investments..." autocomplete="off" />
+              <button type="submit" id="helper-submit-btn" aria-label="Send question"><span>↗</span></button>
+            </form>
+            <div class="helper-meta-bar">
+              <small class="helper-disclaimer" id="ai-engine-status">⚡ 100% Private Local AI via Ollama (fallback active if offline)</small>
+              <button type="button" class="text-button" id="check-ollama-btn" style="font-size:10px;padding:0;color:#3f7754;cursor:pointer;">Check Ollama ↻</button>
+            </div>
           </div>
-          <div class="growth-plan"><div class="plan-title"><div><strong>Expansion map</strong><span>Suggested focus areas</span></div><span class="plan-icon">↗</span></div><div class="plan-step"><span class="step-number">01</span><div><strong>Stabilize</strong><p>Protect a 3-month operating buffer before adding fixed costs.</p></div><span class="step-status">Now</span></div><div class="plan-step"><span class="step-number">02</span><div><strong>Optimize</strong><p>Track your top three cost drivers and price for a healthy margin.</p></div><span class="step-status queued">Next</span></div><div class="plan-step"><span class="step-number">03</span><div><strong>Expand</strong><p>Test one new channel with a capped budget and a clear success metric.</p></div><span class="step-status queued">Later</span></div><button class="outline-button" id="save-plan">Save this plan <span>＋</span></button></div>
+
+          <div class="growth-plan">
+            <div class="plan-title">
+              <div>
+                <strong>Expansion Map & Milestones</strong>
+                <span id="plan-progress-label">1 of 3 completed</span>
+              </div>
+              <span class="plan-icon">🎯</span>
+            </div>
+            <div class="plan-steps" id="plan-steps-container">
+              <div class="plan-step completed" data-step="1">
+                <div class="step-check">
+                  <input type="checkbox" id="step-1-check" checked />
+                  <label for="step-1-check" class="step-number">01</label>
+                </div>
+                <div>
+                  <strong>Protect 3-Month Buffer</strong>
+                  <p>Keep ₹66,000 baseline in liquid savings before taking on new debt or recurring contracts.</p>
+                  <div class="step-meta"><span class="step-tag success">Achieved</span> • ₹44,000 available</div>
+                </div>
+              </div>
+
+              <div class="plan-step" data-step="2">
+                <div class="step-check">
+                  <input type="checkbox" id="step-2-check" />
+                  <label for="step-2-check" class="step-number">02</label>
+                </div>
+                <div>
+                  <strong>Optimize Top Cost Drivers</strong>
+                  <p>Audit discretionary subscriptions and lock down fixed operational vendor expenses.</p>
+                  <div class="step-meta"><span class="step-tag next">In Progress</span> • Next review Oct 15</div>
+                </div>
+              </div>
+
+              <div class="plan-step" data-step="3">
+                <div class="step-check">
+                  <input type="checkbox" id="step-3-check" />
+                  <label for="step-3-check" class="step-number">03</label>
+                </div>
+                <div>
+                  <strong>Capped Growth Experiment</strong>
+                  <p>Test a new client acquisition campaign with a strict ₹15,000 monthly ceiling.</p>
+                  <div class="step-meta"><span class="step-tag queued">Queued</span> • Target 2.0x return</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="plan-actions">
+              <button type="button" class="outline-button" id="save-plan">Save Plan Progress <span>✓</span></button>
+              <button type="button" class="text-button" id="custom-plan-step">＋ Add custom milestone</button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="scenario-lab workspace-scenario dashboard-section" id="workspace-scenario" data-page-section="overview"><div class="scenario-intro"><p class="eyebrow">Decision studio</p><h2>Model your next move</h2><p>Test a change before it touches your real budget.</p></div><div class="scenario-simulator"><div class="sim-header"><div><strong>What if revenue changes?</strong><span>Live planning model · INR</span></div><span class="sim-live"><i></i> Ready</span></div><div class="sim-controls"><label>Monthly revenue <output id="workspace-revenue-output">₹1,20,000</output><input type="range" min="50000" max="250000" step="5000" value="120000" data-scenario="revenue" /></label><label>Monthly operating costs <output id="workspace-cost-output">₹72,000</output><input type="range" min="30000" max="180000" step="5000" value="72000" data-scenario="cost" /></label><label>Growth investment <output id="workspace-invest-output">₹12,000</output><input type="range" min="0" max="60000" step="2000" value="12000" data-scenario="investment" /></label></div><div class="sim-results"><div><span>Monthly surplus</span><strong id="workspace-surplus">₹36,000</strong></div><div><span>Operating margin</span><strong id="workspace-margin">30%</strong></div><div><span>Signal</span><strong class="sim-signal" id="workspace-signal">Healthy</strong></div></div><div class="sim-track"><span style="width:70%" id="workspace-track"></span></div></div></section>
@@ -152,9 +258,9 @@
 
   <aside class="account-preview" id="account-preview" aria-label="Account preview" aria-hidden="true"><div class="account-preview-head"><div class="avatar account-avatar">AM</div><div><strong>Alex Morgan</strong><span>Personal + business plan</span></div><button class="account-close" id="close-account-preview" aria-label="Close account menu">×</button></div><div class="account-completeness"><div><span>Workspace setup</span><strong>72% complete</strong></div><div class="completion-track"><span></span></div><small>Add your work profile to improve recommendations.</small></div><div class="account-menu"><button data-account-action="settings"><span class="menu-icon">⚙</span><span><strong>Account settings</strong><small>Profile, work, and preferences</small></span><b>→</b></button><button data-account-action="services"><span class="menu-icon">⌁</span><span><strong>Connected services</strong><small>Finvu, integrations, and access</small></span><b>→</b></button><button data-account-action="theme"><span class="menu-icon">◐</span><span><strong>Appearance</strong><small>Choose light, dark, or system theme</small></span><b>→</b></button><button data-account-action="privacy"><span class="menu-icon">✓</span><span><strong>Terms & privacy</strong><small>Consent, data use, and policies</small></span><b>→</b></button></div><div class="account-theme"><span>Quick theme</span><button class="theme-choice active" data-theme="light">Light</button><button class="theme-choice" data-theme="dark">Dark</button><button class="theme-choice" data-theme="system">System</button></div><button class="sign-out-button" id="sign-out"><span>↪</span> Sign out</button><p class="account-footer">Finance Buddy · Account protected</p></aside>
 
-  <dialog id="update-dialog"><form method="dialog" id="update-form"><div class="dialog-header"><div><p class="eyebrow">Monthly details</p><h2>Update your numbers</h2><p>Finance Buddy uses these details to refresh your summary and suggestions.</p></div><button class="close-button" value="cancel" aria-label="Close update form">×</button></div><div class="form-grid"><label>Monthly income<input name="income" type="number" min="0" step="50" value="5420" required /></label><label>Spent so far<input name="spent" type="number" min="0" step="50" value="2580" required /></label><label>Monthly essentials<input name="essentials" type="number" min="0" step="50" value="1350" required /></label><label>Update note<input name="note" type="text" placeholder="e.g. New freelance client" /></label></div><div class="dialog-actions"><button class="secondary-button" value="cancel">Cancel</button><button class="primary-button" value="default" type="submit">Save update <span>↗</span></button></div></form></dialog>
+  <dialog id="update-dialog"><form method="dialog" id="update-form"><div class="dialog-header"><div><p class="eyebrow">Monthly details</p><h2>Update your numbers</h2><p>Finance Buddy uses these details to refresh your summary and suggestions.</p></div><button class="close-button" value="cancel" aria-label="Close update form">×</button></div><div class="form-grid"><label>Monthly income<input name="income" type="number" min="0" step="500" value="84000" required /></label><label>Spent so far<input name="spent" type="number" min="0" step="500" value="40000" required /></label><label>Monthly essentials<input name="essentials" type="number" min="0" step="500" value="22000" required /></label><label>Update note<input name="note" type="text" placeholder="e.g. New freelance client" /></label></div><div class="dialog-actions"><button class="secondary-button" value="cancel">Cancel</button><button class="primary-button" value="default" type="submit">Save update <span>↗</span></button></div></form></dialog>
   <dialog id="expense-dialog"><form method="dialog" id="expense-form"><div class="dialog-header"><div><p class="eyebrow">Step 1 · Daily spending</p><h2>Enter an expense</h2><p>Add the details you want Finance Buddy to include in today’s total.</p></div><button class="close-button" value="cancel" aria-label="Close expense form">×</button></div><div class="form-grid"><label>What did you buy?<input name="merchant" type="text" placeholder="e.g. Office supplies" required /></label><label>Amount in INR<input name="amount" type="number" min="1" step="1" placeholder="e.g. 850" required /></label><label>Category<select name="category"><option>Business</option><option>Food & dining</option><option>Transport</option><option>Housing</option><option>Other</option></select></label><label>Optional note<input name="note" type="text" placeholder="e.g. Client meeting" /></label></div><div class="dialog-actions"><button class="secondary-button" value="cancel">Cancel</button><button class="primary-button" value="default" type="submit">Add to today <span>↗</span></button></div></form></dialog>
   <div class="toast" id="toast">Snapshot updated</div>
-  <script src="app.js"></script>
+  <script type="module" src="app.js"></script>
 </body>
 </html>
